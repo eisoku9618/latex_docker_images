@@ -1,6 +1,9 @@
 [![dockeri.co](https://dockeri.co/image/eisoku9618/latex)](https://hub.docker.com/r/eisoku9618/latex)
+[![CircleCI](https://circleci.com/gh/eisoku9618/latex_docker_images/tree/master.svg?style=svg)](https://circleci.com/gh/eisoku9618/latex_docker_images/tree/master)
 
 # USAGE
+
+example: https://circleci.com/api/v1.1/project/github/eisoku9618/latex_docker_images/latest/artifacts/0/root/project/main.pdf
 
 ## for English users
 
