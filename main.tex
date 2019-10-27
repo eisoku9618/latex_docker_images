@@ -1,0 +1,47 @@
+\documentclass[a4paper, onecolumn, 10pt]{article}
+
+\input{preamble.tex}
+
+\title{Hello World}
+\author{Eisoku Kuroiwa}
+\date{\Filemodtoday{\jobname}}
+
+\begin{document}
+\maketitle
+
+\section{sample}
+\autoref{eq:eom} is an equation of motion for a floating base robot.
+
+\begin{equation}
+  \begin{bmatrix}
+    \bm{M}_{BB} & \bm{M}_{BJ}\\
+    \bm{M}_{JB} & \bm{M}_{JJ}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \ddot{\bm{q}}_{B}\\
+    \ddot{\bm{q}}_{J}
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+    \bm{b}_{B}\\
+    \bm{b}_{J}
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    \bm{0}\\
+    \bm{\tau}
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+    \bm{J}_{B1} & \cdots & \bm{J}_{BN}\\
+    \bm{J}_{J1} & \cdots & \bm{J}_{JN}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \bm{f}_1\\
+    \vdots\\
+    \bm{f}_N
+  \end{bmatrix}
+  \label{eq:eom}
+\end{equation}
+
+\end{document}
