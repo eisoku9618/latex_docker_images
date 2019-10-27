@@ -1,0 +1,24 @@
+version: 2.1
+jobs:
+  latex-test:
+    docker:
+      - image: eisoku9618/latex
+    steps:
+      - checkout
+      - run: apt update && apt install -y --no-install-recommends ca-certificates # enable to store_artifacts
+      - run: latexmk main.tex && mv .tmp/main.pdf ./
+      - store_artifacts:
+          path: main.pdf
+  latex-japanese-test:
+    docker:
+      - image: eisoku9618/latex:latex-japanese
+    steps:
+      - checkout
+      - run: cd latex-japanese && latexmk main.tex && mv .tmp/main.pdf ../
+      - store_artifacts:
+          path: main.pdf
+workflows:
+  build:
+    jobs:
+      - latex-test
+      - latex-japanese-test
