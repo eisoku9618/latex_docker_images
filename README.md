@@ -1,4 +1,3 @@
-[![dockeri.co](https://dockeri.co/image/eisoku9618/latex)](https://hub.docker.com/r/eisoku9618/latex)
 [![CircleCI](https://circleci.com/gh/eisoku9618/latex_docker_images/tree/master.svg?style=svg)](https://circleci.com/gh/eisoku9618/latex_docker_images/tree/master)
 
 # USAGE
